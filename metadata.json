@@ -1,0 +1,7 @@
+{
+  "name": "JGM4 Checklist Master",
+  "description": "Sistema profissional de checklists diários para gestão de equipes, com relatórios visuais inteligentes e notificações via WhatsApp/Email. Desenvolvido para JGM4 Consultoria.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
