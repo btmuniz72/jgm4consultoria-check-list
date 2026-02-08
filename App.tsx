@@ -68,29 +68,29 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-30 px-4 py-3 flex justify-between items-center shadow-sm">
+      <header className="bg-gradient-to-r from-indigo-700 to-blue-600 sticky top-0 z-30 px-4 py-3 flex justify-between items-center shadow-lg">
         <div className="flex items-center space-x-3">
           {companyLogo ? (
-            <img src={companyLogo} alt="Logo" className="h-10 w-auto object-contain max-w-[120px]" />
+            <img src={companyLogo} alt="Logo" className="h-10 w-auto object-contain max-w-[120px] brightness-0 invert" />
           ) : (
-            <div className="bg-indigo-600 p-2 rounded-lg">
+            <div className="bg-white/20 p-2 rounded-lg">
                <i className="fas fa-clipboard-check text-white"></i>
             </div>
           )}
           <div>
-            <h1 className="text-xl font-bold text-indigo-900 tracking-tight">JGM4 <span className="text-slate-500 font-normal">Checklist</span></h1>
+            <h1 className="text-xl font-bold text-white tracking-tight">JGM4 <span className="text-white/70 font-normal">Checklist</span></h1>
           </div>
         </div>
         <div className="flex items-center space-x-3">
           {view === AppView.ADMIN_DASHBOARD && (
-            <button onClick={logout} className="text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors">
+            <button onClick={logout} className="text-sm font-medium text-white/80 hover:text-white transition-colors">
               <i className="fas fa-sign-out-alt mr-2"></i>Sair
             </button>
           )}
           {view === AppView.USER_SELECT && (
             <button 
               onClick={() => setView(AppView.LOGIN)} 
-              className="text-sm font-medium bg-slate-100 px-3 py-1.5 rounded-full hover:bg-slate-200 transition-colors"
+              className="text-sm font-medium bg-white/20 text-white px-3 py-1.5 rounded-full hover:bg-white/30 transition-colors"
             >
               <i className="fas fa-lock mr-2"></i>Admin
             </button>
