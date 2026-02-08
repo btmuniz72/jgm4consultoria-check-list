@@ -2,9 +2,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { AppView, User, ChecklistItem, ChecklistResponse } from './types';
 import { INITIAL_USERS, INITIAL_CHECKLIST_ITEMS, ADMIN_CREDENTIALS } from './constants';
-import AdminDashboard from './components/AdminDashboard';
-import UserChecklist from './components/UserChecklist';
-import Login from './components/Login';
+import AdminDashboard from '@/components/AdminDashboard';
+import UserChecklist from '@/components/UserChecklist';
+import Login from '@/components/Login';
 
 const App: React.FC = () => {
   const [users, setUsers] = useState<User[]>(() => {
