@@ -71,7 +71,7 @@ const App: React.FC = () => {
       <header className="bg-gradient-to-r from-indigo-700 to-blue-600 sticky top-0 z-30 px-4 py-3 flex justify-between items-center shadow-lg">
         <div className="flex items-center space-x-3">
           {companyLogo ? (
-            <img src={companyLogo} alt="Logo" className="h-10 w-auto object-contain max-w-[120px] brightness-0 invert" />
+            <img src={companyLogo} alt="Logo" className="h-10 w-auto object-contain max-w-[120px]" />
           ) : (
             <div className="bg-white/20 p-2 rounded-lg">
                <i className="fas fa-clipboard-check text-white"></i>
