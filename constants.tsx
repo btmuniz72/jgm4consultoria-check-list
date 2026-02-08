@@ -7,11 +7,11 @@ export const INITIAL_USERS: User[] = [
 ];
 
 export const INITIAL_CHECKLIST_ITEMS: ChecklistItem[] = [
-  { id: 'q1', question: 'Equipamentos de Proteção Individual (EPI) estão completos?', category: 'Segurança', assignedUserIds: ['1', '2'] },
-  { id: 'q2', question: 'Área de trabalho está limpa e organizada?', category: 'Organização', assignedUserIds: ['1', '2'] },
-  { id: 'q3', question: 'Ferramentas foram verificadas e estão em bom estado?', category: 'Manutenção', assignedUserIds: ['1'] },
-  { id: 'q4', question: 'Identificou algum risco potencial hoje?', category: 'Segurança', assignedUserIds: ['1', '2'] },
-  { id: 'q5', question: 'O cronograma diário foi revisado?', category: 'Planejamento', assignedUserIds: ['2'] },
+  { id: 'q1', question: 'Equipamentos de Proteção Individual (EPI) estão completos?', category: 'Segurança', assignedUserIds: ['1', '2'], required: true },
+  { id: 'q2', question: 'Área de trabalho está limpa e organizada?', category: 'Organização', assignedUserIds: ['1', '2'], required: true },
+  { id: 'q3', question: 'Ferramentas foram verificadas e estão em bom estado?', category: 'Manutenção', assignedUserIds: ['1'], required: true },
+  { id: 'q4', question: 'Identificou algum risco potencial hoje?', category: 'Segurança', assignedUserIds: ['1', '2'], required: false },
+  { id: 'q5', question: 'O cronograma diário foi revisado?', category: 'Planejamento', assignedUserIds: ['2'], required: true },
 ];
 
 export const ADMIN_CREDENTIALS = {

@@ -12,6 +12,7 @@ export interface ChecklistItem {
   question: string;
   category: string;
   assignedUserIds: string[]; // List of user IDs who should see this item
+  required?: boolean; // Se o item é de preenchimento obrigatório
 }
 
 export interface ChecklistResponse {
